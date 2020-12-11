@@ -14,12 +14,14 @@ var gree5 = 'buenaaaas ';
 var gree6 = 'bueeenaaaaasss ';
 
 // Define the hours of the greetings
-if (hour >= 23 && hour < 5) {
-    document.getElementById('greetings').innerText = gree1 + name;
-} else if (hour >= 6 && hour < 12) {
-    document.getElementById('greetings').innerText = gree2 + name;
-} else if (hour >= 12 && hour < 17) {
+if (hour >= 1 && hour < 3) {
+    document.getElementById('greetings').innerText = gree6 + name;
+} else if (hour >= 3 && hour < 6) {
     document.getElementById('greetings').innerText = gree3 + name;
-} else  {
+}else if (hour >= 6 && hour < 12) {
     document.getElementById('greetings').innerText = gree4 + name;
+} else if (hour >= 12 && hour < 17) {
+    document.getElementById('greetings').innerText = gree5 + name;
+} else  {
+    document.getElementById('greetings').innerText = gree1 + name;
 }
